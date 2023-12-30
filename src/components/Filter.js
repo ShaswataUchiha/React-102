@@ -17,7 +17,9 @@ const Filter = (props) => {
               <button 
                className={`text-lg px-2 py-1 rounded-md font-medium
                text-white bg-black hover:bg-opacity-50 border-2
-                transition-all duration-300`} 
+                transition-all duration-300
+                ${category === data.title ? "bg-opacity-60 border-whitr" : "bg-opacity-40 border-transparent"}
+                `} 
                key={data.id}
                onClick={ () => categoryHandeler(data.title)}
                > {data.title}</button>
